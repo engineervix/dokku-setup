@@ -17,3 +17,4 @@ sudo apt-get install dokku -y
 
 # run with root!
 sudo dokku plugin:install-dependencies --core
+sudo dokku plugin:install https://github.com/dokku/dokku-postgres.git
