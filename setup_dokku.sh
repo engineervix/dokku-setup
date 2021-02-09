@@ -4,7 +4,7 @@
 wget -nv -O - https://get.docker.com/ | sh
 
 # setup dokku apt repository
-wget -nv -O - https://packagecloud.io/dokku/dokku/gpgkey | apt-key add -
+wget -nv -O - https://packagecloud.io/dokku/dokku/gpgkey | sudo apt-key add -
 export SOURCE="https://packagecloud.io/dokku/dokku/ubuntu/"
 export OS_ID="$(lsb_release -cs 2>/dev/null || echo "bionic")"
 echo "xenial bionic focal" | grep -q "$OS_ID" || OS_ID="bionic"
